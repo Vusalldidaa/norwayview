@@ -27,8 +27,8 @@ async def _(event):
     ok = await BotzHub(GetFullUserRequest(event.sender_id))
     await event.reply(f"Hello {ok.user.first_name}! \nI'm a view-counter bot.\nSend me a message and I'll attach a view count to it!",
                     buttons=[
-                        [Button.url("Dev.", url="https://t.me/BotzHub"),
-                        Button.url("Repository", url="https://github.com/xditya/ViewCountBot")]
+                        [Button.url("👨‍💻 Sahibim", url="https://t.me/Vusaldeveloper"),
+                        Button.url("👻 Repolarım", url="https://github.com/Vusalldidaa")]
                     ])
 
 @BotzHub.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
